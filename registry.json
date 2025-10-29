@@ -95,6 +95,38 @@
       ]
     },
     {
+      "name": "catlife-theme",
+      "type": "registry:theme",
+      "title": "Catlife Theme",
+      "description": "Catlife design system theme with warm orange palette and bold typography",
+      "cssVars": {
+        "light": {
+          "background": "#FFFAF3",
+          "foreground": "#161616",
+          "primary": "#F99830",
+          "primary-foreground": "#FFFAF3",
+          "secondary": "#FFD094",
+          "secondary-foreground": "#161616",
+          "accent": "#FFA63A",
+          "accent-foreground": "#161616",
+          "muted": "#F27100",
+          "muted-foreground": "#161616",
+          "destructive": "#CC4A11",
+          "destructive-foreground": "#FFFAF3",
+          "border": "#161616",
+          "input": "#FFFAF3",
+          "ring": "#F99830"
+        }
+      },
+      "files": [
+        {
+          "path": "src/styles/design-tokens.css",
+          "type": "registry:style",
+          "target": "styles/design-tokens.css"
+        }
+      ]
+    },
+    {
       "name": "blank",
       "type": "registry:block",
       "title": "Blank",
@@ -794,6 +826,186 @@
         "https://registry-starter.vercel.app/r/theme.json"
       ],
       "files": [
+        {
+          "path": "src/layouts/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "catlife-button",
+      "type": "registry:ui",
+      "title": "Catlife Button",
+      "description": "Button component with signature offset shadow effect. 5 variants and 4 sizes.",
+      "registryDependencies": [
+        "https://registry-starter.vercel.app/r/catlife-theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/catlife-button.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/layouts/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "catlife-input",
+      "type": "registry:ui",
+      "title": "Catlife Input",
+      "description": "Form input field with pill-shaped design and focus states.",
+      "registryDependencies": [
+        "https://registry-starter.vercel.app/r/catlife-theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/catlife-input.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/layouts/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "catlife-badge",
+      "type": "registry:ui",
+      "title": "Catlife Badge",
+      "description": "Pill-shaped badges for labels, status indicators, and discount tags.",
+      "registryDependencies": [
+        "https://registry-starter.vercel.app/r/catlife-theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/catlife-badge.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/layouts/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "catlife-card",
+      "type": "registry:ui",
+      "title": "Catlife Card",
+      "description": "Container component with 7 color variants and 5 sizes. Includes sub-components for header, title, description, and content.",
+      "registryDependencies": [
+        "https://registry-starter.vercel.app/r/catlife-theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/catlife-card.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/layouts/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "catlife-icon-button",
+      "type": "registry:ui",
+      "title": "Catlife Icon Button",
+      "description": "Circular icon button with 4 variants and 4 sizes.",
+      "registryDependencies": [
+        "https://registry-starter.vercel.app/r/catlife-theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/catlife-icon-button.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/layouts/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "catlife-select",
+      "type": "registry:ui",
+      "title": "Catlife Select",
+      "description": "Custom select dropdown with pill-shaped design and custom arrow indicator.",
+      "registryDependencies": [
+        "https://registry-starter.vercel.app/r/catlife-theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/catlife-select.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/layouts/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "catlife-form-container",
+      "type": "registry:ui",
+      "title": "Catlife Form Container",
+      "description": "Container for form elements with optional title and centered layout.",
+      "registryDependencies": [
+        "https://registry-starter.vercel.app/r/catlife-theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/catlife-form-container.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/layouts/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "catlife-pagination-dots",
+      "type": "registry:ui",
+      "title": "Catlife Pagination Dots",
+      "description": "Circular navigation indicators for carousels and multi-step forms with click handlers.",
+      "registryDependencies": [
+        "https://registry-starter.vercel.app/r/catlife-theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/catlife-pagination-dots.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "src/layouts/minimal-layout.tsx",
+          "type": "registry:file",
+          "target": "app/layout.tsx"
+        }
+      ]
+    },
+    {
+      "name": "catlife-checkbox-item",
+      "type": "registry:ui",
+      "title": "Catlife Checkbox Item",
+      "description": "Custom checkbox with label and 3 color variants.",
+      "registryDependencies": [
+        "https://registry-starter.vercel.app/r/catlife-theme.json"
+      ],
+      "files": [
+        {
+          "path": "src/components/ui/catlife-checkbox-item.tsx",
+          "type": "registry:component"
+        },
         {
           "path": "src/layouts/minimal-layout.tsx",
           "type": "registry:file",
