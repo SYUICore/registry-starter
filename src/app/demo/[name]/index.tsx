@@ -42,6 +42,17 @@ import { tabs } from "@/app/demo/[name]/ui/tabs";
 import { toggleGroup } from "@/app/demo/[name]/ui/toggle-group";
 import { tooltip } from "@/app/demo/[name]/ui/tooltip";
 
+// catlife
+import { catlifeButton } from "@/app/demo/[name]/ui/catlife-button";
+import { catlifeInput } from "@/app/demo/[name]/ui/catlife-input";
+import { catlifeBadge } from "@/app/demo/[name]/ui/catlife-badge";
+import { catlifeCard } from "@/app/demo/[name]/ui/catlife-card";
+import { catlifeIconButton } from "@/app/demo/[name]/ui/catlife-icon-button";
+import { catlifeSelect } from "@/app/demo/[name]/ui/catlife-select";
+import { catlifeFormContainer } from "@/app/demo/[name]/ui/catlife-form-container";
+import { catlifePaginationDots } from "@/app/demo/[name]/ui/catlife-pagination-dots";
+import { catlifeCheckboxItem } from "@/app/demo/[name]/ui/catlife-checkbox-item";
+
 interface Demo {
   name: string; // this must match the `registry.json` name
   components?: {
@@ -91,4 +102,15 @@ export const demos: { [name: string]: Demo } = {
   tabs,
   "toggle-group": toggleGroup,
   tooltip,
+
+  // catlife
+  "catlife-button": catlifeButton,
+  "catlife-input": catlifeInput,
+  "catlife-badge": catlifeBadge,
+  "catlife-card": catlifeCard,
+  "catlife-icon-button": catlifeIconButton,
+  "catlife-select": catlifeSelect,
+  "catlife-form-container": catlifeFormContainer,
+  "catlife-pagination-dots": catlifePaginationDots,
+  "catlife-checkbox-item": catlifeCheckboxItem,
 };

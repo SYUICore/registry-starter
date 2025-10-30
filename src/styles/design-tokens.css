@@ -1,0 +1,162 @@
+/**
+ * Catlife Design System - Design Tokens
+ * Extracted from Figma design
+ * 
+ * This file contains all foundational design tokens:
+ * - Color palette
+ * - Typography scale
+ * - Spacing system
+ * - Border radius
+ * - Shadows and effects
+ */
+
+@layer base {
+  :root {
+    /* ============================================
+       COLOR PALETTE
+       ============================================ */
+    
+    /* Orange Scale - Primary Brand Color */
+    --color-orange-50: #FFFAF3;
+    --color-orange-100: #FFEED6;
+    --color-orange-200: #FFD094;
+    --color-orange-300: #FFA63A;
+    --color-orange-400: #F99830;
+    --color-orange-500: #F27100;
+    --color-orange-600: #FE6B1C;
+    --color-orange-700: #CC4A11;
+    
+    /* Gray Scale - Neutral Colors */
+    --color-gray-500: #78716C;
+    --color-gray-600: #57534E;
+    --color-gray-700: #44403C;
+    --color-gray-900: #161616;
+    
+    /* Semantic Colors */
+    --color-soft-white: #FFFAF3;
+    --color-brown: #1C0E04;
+    --color-success-green: #10B981;
+    
+    /* Semantic Aliases */
+    --color-primary: var(--color-orange-400);
+    --color-primary-hover: var(--color-orange-500);
+    --color-text-primary: var(--color-gray-900);
+    --color-text-secondary: var(--color-gray-500);
+    --color-background: var(--color-soft-white);
+    --color-surface: var(--color-orange-50);
+    
+    /* ============================================
+       TYPOGRAPHY
+       ============================================ */
+    
+    /* Font Families */
+    --font-primary: 'Roc Grotesk', -apple-system, Roboto, Helvetica, sans-serif;
+    --font-secondary: 'Open Sans', -apple-system, Roboto, Helvetica, sans-serif;
+    
+    /* Font Sizes */
+    --font-size-xs: 0.8125rem;    /* 13px */
+    --font-size-sm: 0.875rem;     /* 14px */
+    --font-size-base: 1rem;       /* 16px */
+    --font-size-md: 1.125rem;     /* 18px */
+    --font-size-lg: 1.25rem;      /* 20px */
+    --font-size-xl: 1.4375rem;    /* 23px */
+    --font-size-2xl: 1.5rem;      /* 24px */
+    --font-size-3xl: 1.875rem;    /* 30px */
+    --font-size-4xl: 2.375rem;    /* 38px */
+    --font-size-5xl: 2.875rem;    /* 46px */
+    --font-size-6xl: 3.4375rem;   /* 55px */
+    --font-size-7xl: 5rem;        /* 80px */
+    
+    /* Font Weights */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 750;
+    
+    /* Line Heights */
+    --line-height-tight: 1.0;     /* 100% */
+    --line-height-snug: 1.05;     /* 105% */
+    --line-height-normal: 1.1;    /* 110% */
+    --line-height-relaxed: 1.15;  /* 115% */
+    --line-height-comfortable: 1.2; /* 120% */
+    --line-height-loose: 1.5;     /* 150% */
+    
+    /* ============================================
+       SPACING SYSTEM
+       ============================================ */
+    
+    --space-1: 0.25rem;   /* 4px */
+    --space-2: 0.5rem;    /* 8px */
+    --space-3: 0.75rem;   /* 12px */
+    --space-4: 1rem;      /* 16px */
+    --space-5: 1.25rem;   /* 20px */
+    --space-6: 1.5rem;    /* 24px */
+    --space-7: 1.75rem;   /* 28px */
+    --space-8: 2rem;      /* 32px */
+    --space-10: 2.5rem;   /* 40px */
+    --space-12: 3rem;     /* 48px */
+    --space-14: 3.5rem;   /* 56px */
+    --space-15: 3.75rem;  /* 60px */
+    --space-17: 4.25rem;  /* 68px */
+    --space-20: 5rem;     /* 80px */
+    --space-25: 6.25rem;  /* 100px */
+    
+    /* ============================================
+       BORDER RADIUS
+       ============================================ */
+    
+    --radius-xs: 0.5rem;      /* 8px */
+    --radius-sm: 0.75rem;     /* 12px */
+    --radius-md: 1rem;        /* 16px */
+    --radius-lg: 1.5rem;      /* 24px */
+    --radius-xl: 1.75rem;     /* 28px */
+    --radius-2xl: 2rem;       /* 32px */
+    --radius-3xl: 2.5rem;     /* 40px */
+    --radius-4xl: 3rem;       /* 48px */
+    --radius-5xl: 3.5rem;     /* 56px */
+    --radius-pill: 62.5rem;   /* 1000px - fully rounded */
+    
+    /* ============================================
+       SHADOWS & EFFECTS
+       ============================================ */
+    
+    /* Brand Shadow - Offset shadow effect */
+    --shadow-brand-sm: 1px 1px 0 0 var(--color-gray-900);
+    --shadow-brand: 2px 2px 0 0 var(--color-gray-900);
+    --shadow-brand-lg: 3px 3px 0 0 var(--color-gray-900);
+    
+    /* Brand Shadow - Orange variant */
+    --shadow-brand-orange: 2px 2px 0 0 var(--color-orange-400);
+    
+    /* ============================================
+       OPACITY
+       ============================================ */
+    
+    --opacity-20: 0.2;
+    --opacity-30: 0.3;
+    --opacity-40: 0.4;
+    --opacity-50: 0.5;
+    --opacity-100: 1;
+    
+    /* ============================================
+       BORDERS
+       ============================================ */
+    
+    --border-width-sm: 0.8px;
+    --border-width-base: 1px;
+    --border-width-md: 1.2px;
+    --border-width-lg: 2px;
+    
+    /* ============================================
+       Z-INDEX
+       ============================================ */
+    
+    --z-index-dropdown: 1000;
+    --z-index-sticky: 1020;
+    --z-index-fixed: 1030;
+    --z-index-modal-backdrop: 1040;
+    --z-index-modal: 1050;
+    --z-index-popover: 1060;
+    --z-index-tooltip: 1070;
+  }
+}
